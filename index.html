@@ -4,20 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F to C</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .C-F:hover,
       .F-C:hover {
         cursor: pointer;
-        background-color: rgb(105, 105, 110);
+        background-color: rgb(213, 213, 231);
+      }
+      .Convert-container {
+        width: 700px;
+        height: 400px;
+        margin: 100px, auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        align-items: center;
+      }
+      .display-value {
+        margin-top: 20px;
+        width: max-content;
+        font-weight: bold;
+        color: rgb(155, 19, 31);
+      }
+      .degree-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .input {
+        width: 70px;
+        text-align: center;
+        background-color: aquamarine;
+      }
+      .convert {
+        border-radius: 3rem;
+        background-color: aquamarine;
       }
     </style>
   </head>
   <body>
     <div class="Convert-container">
       <div class="display-value">0</div>
-      <label class="C-F" type="text" id="degree-type"><b>C &deg</b></label>
-      <label class="F-C" type="text" id="degree-type"><b>F &deg</b></label>
-      <input class="input" type="number" />
+      <div class="degree-container">
+        <label class="C-F" type="text" id="degree-type"
+          ><b>Celsius to F</b></label
+        >
+        <label class="F-C" type="text" id="degree-type"
+          ><b>Fahrenheit to C</b></label
+        >
+        <input class="input" type="number" />
+      </div>
       <button class="convert">Convert</button>
     </div>
     <script src="script.js"></script>

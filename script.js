@@ -15,7 +15,7 @@ const activeDegreeType = function () {
     type = "fahrenheit";
   });
   if (type === "celsius") {
-    fDegreeType.style.opacity = 0.5;
+    fDegreeType.style.opacity = 0.2;
     cDegreeType.style.opacity = 1;
   } else if (type === "fahrenheit") {
     cDegreeType.style.opacity = 0.5;
